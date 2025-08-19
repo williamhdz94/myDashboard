@@ -10,4 +10,4 @@ import { Component } from '@angular/core';
     }
   `,
 })
-export class ControFlowComponent { }
+export default class ControFlowComponent { }

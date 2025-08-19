@@ -1,10 +1,10 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { SideMenuComponent } from '../shared/components/side-menu/side-menu.component';
 @Component({
   selector: 'app-dashboard',
-  imports: [],
+  imports: [RouterOutlet, SideMenuComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DashboardComponent { }
+export default class DashboardComponent { }
